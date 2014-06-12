@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- start: Meta -->
+	<meta charset="utf-8">
+	<title>Dashboard</title>
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: CSS -->
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/retina.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Spinnaker' rel='stylesheet' type='text/css'>
+	<!-- end: CSS -->
+	
+
+	<!-- The HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	
+	  	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<script src="assets/css/ie6-8.css"></script>
+		
+	<![endif]-->
+
+    <!-- start: Favicon and Touch Icons -->
+    <link href='assets/ico/favicon.ico' rel='shortcut icon' type='image/x-icon'>
+    <!-- end: Favicon and Touch Icons -->
+
+    <!-- Google Analytics -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-46781574-1', 'AttackNode.com');
+        ga('send', 'pageview');
+
+    </script>
+
+    <!-- KissMetrics -->
+    <script type="text/javascript">var _kmq = _kmq || [];
+    var _kmk = _kmk || '3adbaa1051cf24981e86ad2814599d8ad4a29027';
+    function _kms(u){
+        setTimeout(function(){
+            var d = document, f = d.getElementsByTagName('script')[0],
+                    s = d.createElement('script');
+            s.type = 'text/javascript'; s.async = true; s.src = u;
+            f.parentNode.insertBefore(s, f);
+        }, 1);
+    }
+    _kms('//i.kissmetrics.com/i.js');
+    _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+    </script>
+		
+</head>
+
+<body>
+		<!-- start: Header -->
+	<header class="navbar">
+		<div class="container">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".sidebar-nav.nav-collapse">
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			      <span class="icon-bar"></span>
+			</button>
+			<a id="main-menu-toggle" class="hidden-xs open"><i class="icon-reorder"></i></a>
+				<a class="navbar-brand col-lg-2 col-sm-1 col-xs-12" href="#"><span style="font-family: Spinnaker; font-style: italic; font-weight: bold;"><div id="SvgShp0-1dd6" skin="svgshape.v1.svg_2816cd1e6267e143bb2d91eb671faca3.AtomicStar" comp="wysiwyg.viewer.components.svgshape.SvgShape" propertyquery="#SvgShp0-1dd6" width="35" height="31" x="13" y="21" scale="1" angle="0" styleid="SvgShp0-1dd6_hw0esxkc" state="" class="svgshape_v1_svg_2816cd1e6267e143bb2d91eb671faca3_AtomicStarSvgShp0-1dd6_hw0esxkc" style="visibility: visible; left: 10px; top: 5px; min-width: 35px; min-height: 31px; position: absolute;"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="width: 35px; height: 31px;"><g transform="translate(-1.5,-2.5)"><path d="M32.761223 14.84362c-1.651886 0,-2.991356 1.332766,-2.991356 2.976384c0 0.017872,0.005132 0.034468,0.005132 0.05234H21.579721c-0.120604 -0.598724,-0.422113 -1.131064,-0.844867 -1.54149L26.474435 8.617023c0.167434 0.028723,0.337434 0.051702,0.513207 0.051702c1.651886 0,2.991356 -1.332766,2.991356 -2.976384c0 -1.643617,-1.339471 -2.976384,-2.991356 -2.976384s-2.991356 1.332766,-2.991356 2.976384c0 0.998936,0.499094 1.878511,1.257999 2.417873l-5.618336 7.551065c-0.311132 -0.109149,-0.640226 -0.179362,-0.988565 -0.179362c-0.374641 0,-0.729396 0.076596,-1.059773 0.201702l-5.549694 -7.570214c0.761471 -0.539362,1.261848 -1.420213,1.261848 -2.421064c0 -1.643617,-1.339471 -2.976384,-2.991356 -2.976384s-2.991356 1.332766,-2.991356 2.976384c0 1.643617,1.339471 2.976384,2.991356 2.976384c0.175132 0,0.343849 -0.02234,0.510641 -0.051064l5.691468 7.76298c-0.396453 0.403404,-0.679358 0.916596,-0.79483 1.491702H7.521052c0 -0.017872,0.005132 -0.034468,0.005132 -0.05234c0 -1.643617,-1.339471 -2.976384,-2.991356 -2.976384s-2.991356 1.332766,-2.991356 2.976384s1.339471 2.976384,2.991356 2.976384c1.169471 0,2.171508 -0.674043,2.663545 -1.647447h8.547466c0.113547 0.473617,0.343207 0.898085,0.653698 1.253617l-4.654789 6.949789c-0.427887 -0.235532,-0.912867 -0.381064,-1.43698 -0.381064c-1.651886 0,-2.991356 1.332766,-2.991356 2.976384s1.339471 2.976384,2.991356 2.976384s2.991356 -1.332766,2.991356 -2.976384c0 -0.655532,-0.219396 -1.25617,-0.580566 -1.74766l4.708035 -7.029576c0.373358 0.166596,0.785207 0.264255,1.220792 0.264255c0.338075 0,0.657547 -0.068298,0.96098 -0.171064l4.777959 7.240214c-0.241207 0.429575,-0.390679 0.916596,-0.390679 1.44383c0 1.643617,1.339471 2.976384,2.991356 2.976384s2.991356 -1.332766,2.991356 -2.976384s-1.339471 -2.976384,-2.991356 -2.976384c-0.640226 0,-1.230414 0.204255,-1.71732 0.545106l-4.559846 -6.910214c0.409283 -0.388723,0.704377 -0.891064,0.839735 -1.457234h8.547466c0.492037 0.973404,1.494074 1.647447,2.663545 1.647447c1.651886 0,2.991356 -1.332766,2.991356 -2.976384S34.413109 14.84362,32.761223 14.84362zM26.987642 3.992554c0.941735 0,1.708338 0.762766,1.708338 1.699788c0 0.937021,-0.766603 1.699788,-1.708338 1.699788c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788C25.279304 4.75532,26.045907 3.992554,26.987642 3.992554zM10.308408 7.392129c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788c0 -0.937021,0.766603 -1.699788,1.708338 -1.699788c0.941735 0,1.708338 0.762766,1.708338 1.699788C12.016747 6.630001,11.250143 7.392129,10.308408 7.392129zM4.534827 19.519791c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788c0 -0.937021,0.766603 -1.699788,1.708338 -1.699788c0.941735 0,1.708338 0.762766,1.708338 1.699788C6.243166 18.757663,5.476562 19.519791,4.534827 19.519791zM10.308408 31.647453c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788c0 -0.937021,0.766603 -1.699788,1.708338 -1.699788c0.941735 0,1.708338 0.762766,1.708338 1.699788C12.016747 30.885325,11.250143 31.647453,10.308408 31.647453zM26.987642 28.247878c0.941735 0,1.708338 0.762766,1.708338 1.699788c0 0.937021,-0.766603 1.699788,-1.708338 1.699788c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788C25.279304 29.010644,26.045907 28.247878,26.987642 28.247878zM18.648025 20.158089c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788c0 -0.937021,0.766603 -1.699788,1.708338 -1.699788c0.941735 0,1.708338 0.762766,1.708338 1.699788C20.356364 19.395961,19.58976 20.158089,18.648025 20.158089zM32.761223 19.519791c-0.941735 0,-1.708338 -0.762766,-1.708338 -1.699788c0 -0.937021,0.766603 -1.699788,1.708338 -1.699788c0.941735 0,1.708338 0.762766,1.708338 1.699788C34.469562 18.757663,33.702958 19.519791,32.761223 19.519791z"></path></g></svg></div>AttackNode</span></a>
+			<!-- start: Header Menu -->
+			<div class="nav-no-collapse header-nav">
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown hidden-xs">
+						<a class="btn dropdown-toggle" data-toggle="dropdown" href="page-infrastructure.html#">
+							<i class="icon-warning-sign"></i>
+						</a>
+						<ul class="dropdown-menu notifications">
+							<li class="dropdown-menu-title">
+								<span>You have 11 notifications</span>
+							</li>
+                        	<li>
+                                <a href="page-infrastructure.html#">
+									<span class="icon blue"><i class="icon-user"></i></span>
+									<span class="message">Failure</span>
+									<span class="time">1 min</span>
+                                </a>
+                            </li>
+							<li>
+                                <a href="page-infrastructure.html#">
+									<span class="icon green"><i class="icon-comment-alt"></i></span>
+									<span class="message">Starting Monitors</span>
+									<span class="time">7 min</span>
+                                </a>
+                            </li>
+							<li>
+                                <a href="page-infrastructure.html#">
+									<span class="icon green"><i class="icon-comment-alt"></i></span>
+									<span class="message">Deployer Monitors</span>
+									<span class="time">8 min</span>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-sub-footer">
+                        		<a>View all notifications</a>
+							</li>
+						</ul>
+					</li>
+
+
+					<!-- start: User Dropdown -->
+					<li class="dropdown">
+						<a class="btn account dropdown-toggle" data-toggle="dropdown" href="page-infrastructure.html#">
+							<!--<div class="avatar"><img src="assets/img/avatar.jpg" alt="Avatar"></div>-->
+							<div class="user">
+								<span class="hello">Welcome!</span>
+								<!--<span class="name">Auto Bot</span>-->
+							</div>
+						</a>
+						<ul class="dropdown-menu">
+							<li class="dropdown-menu-title">
+
+							</li>
+							<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+							<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+							<li><a href="login.html"><i class="icon-off"></i> Logout</a></li>
+						</ul>
+					</li>
+					<!-- end: User Dropdown -->
+				</ul>
+			</div>
+			<!-- end: Header Menu -->
+			
+		</div>	
+	</header>
+	<!-- end: Header -->
+	
+		<div class="container">
+		<div class="row">
+				
+			<!-- start: Main Menu -->
+			<div id="sidebar-left" class="col-lg-2 col-sm-1">
+
+				<div class="nav-collapse sidebar-nav collapse navbar-collapse bs-navbar-collapse">
+					<ul class="nav nav-tabs nav-stacked main-menu">
+
+                        <li><a href="dashboard2.html"><i class="icon-dashboard"></i><span class="hidden-sm"> Dashboard</span></a></li>
+                        
+						<li><a href="apps.html"><i class="icon-play"></i><span class="hidden-sm"> Applications</span></a></li>
+
+                        <li><a href="live.html"><i class="icon-tasks"></i><span class="hidden-sm"> Live Traffic</span></a></li>
+
+                        <li><a href="events.html"><i class="icon-tasks"></i><span class="hidden-sm"> Attack Events</span></a></li>
+
+                        <li><a href="notifications.html"><i class="icon-bullhorn"></i><span class="hidden-sm"> Notifications</span></a></li>
+
+                        <li><a href="monitorSettings.html"><i class="icon-cogs"></i><span class="hidden-sm"> Monitor Settings</span></a></li>
+
+                        <li><a href="settings.html"><i class="icon-user"></i><span class="hidden-sm"> Settings</span></a></li>
+
+                        <li>
+                            <a class="dropmenu" href="calendar.html#"><i class="icon-info-sign"></i><span class="hidden-sm"> Tutorials</span> <span class="label">3</span></a>
+                            <ul>
+                                <li><a href="#" target="_blank"><i class="icon-circle"></i><span class="hidden-sm"> Video Overview</span></a></li>
+
+                                <li><a href="#" target="_blank"><i class="icon-circle"></i><span class="hidden-sm">  Walk Through</span></a></li>
+
+                                <li><a href="#" target="_blank"><i class="icon-circle"></i><span class="hidden-sm"> Run Locally</span></a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="mailto:support@attacknode.com" target="_blank"><i class="icon-envelope"></i><span class="hidden-sm"> Support Email</span></a></li>
+
+                    </ul>
+				</div>
+			</div>
+			<!-- end: Main Menu -->
+						
+			<!-- start: Content -->
+			<div id="content" class="col-lg-10 col-sm-11">
+
+
+                <h1>Dashboard</h1>
+
+
+
+                <div class="row" id="chart1">
+
+                    <div class="col-xs-12">
+
+                        <div class="main-chart">
+
+                            <div class="bar">
+
+                                <div class="title">JAN</div>
+                                <div class="value">80%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">FEB</div>
+                                <div class="value">60%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">MAR</div>
+                                <div class="value">50%</div>
+
+                            </div>
+
+                            <div class="bar">
+
+                                <div class="title">APR</div>
+                                <div class="value">40%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">MAY</div>
+                                <div class="value">10%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">JUN</div>
+                                <div class="value">30%</div>
+
+                            </div>
+
+                            <div class="bar">
+
+                                <div class="title">JUL</div>
+                                <div class="value">50%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">AUG</div>
+                                <div class="value">65%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">SEP</div>
+                                <div class="value">40%</div>
+
+                            </div>
+
+                            <div class="bar">
+
+                                <div class="title">OCT</div>
+                                <div class="value">32%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">NOV</div>
+                                <div class="value">20%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">DEC</div>
+                                <div class="value">10%</div>
+
+                            </div>
+
+                            <div class="bar">
+
+                                <div class="title">JAN</div>
+                                <div class="value">100%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">FEB</div>
+                                <div class="value">60%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">MAR</div>
+                                <div class="value">50%</div>
+
+                            </div>
+
+                            <div class="bar">
+
+                                <div class="title">APR</div>
+                                <div class="value">40%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">MAY</div>
+                                <div class="value">10%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">JUN</div>
+                                <div class="value">30%</div>
+
+                            </div>
+
+                            <div class="bar">
+
+                                <div class="title">JUL</div>
+                                <div class="value">50%</div>
+
+                            </div>
+
+                            <div class="bar simple">
+
+                                <div class="title">AUG</div>
+                                <div class="value">65%</div>
+
+                            </div>
+
+                        </div>
+
+                    </div><!--/col-->
+
+                </div><!--/row-->
+
+
+
+
+				<div class="row" id="attack_gauge">
+
+                <div class="col-lg-12">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2><i class="icon-list"></i>Attack Gauge</h2>
+                            <div class="box-icon">
+                                <a href="charts-others.html#" class="btn-setting"><i class="icon-wrench"></i></a>
+                                <a href="charts-others.html#" class="btn-minimize"><i class="icon-chevron-up"></i></a>
+                                <a href="charts-others.html#" class="btn-close"><i class="icon-remove"></i></a>
+                            </div>
+                        </div>
+                        <div class="box-content">
+                            <div style="width:40%; display: inline-block">
+                                <div id="g1" class="sz1"></div>
+                                <div id="g1a" class="sz1"></div>
+                            </div>
+                            <div style="width:40%; float: right; display: inline-block">
+                                <div id="g2" class="sz0"></div>
+                                <div id="g2a" class="sz0"></div>
+                                <div id="g2b" class="sz0"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div><!--/col-->
+
+				</div>
+       
+					
+			</div>
+			<!-- end: Content -->
+				
+				</div><!--/row-->		
+		
+	</div><!--/container-->
+	
+		
+
+	
+	<div class="clearfix"></div>
+	
+	<footer>
+		<p>
+			<span style="text-align:left;float:left">&copy; 2014 <a href="http://www.autodevbot.com" alt="AttackNode.com">AttackNode</a></span>
+		</p>
+
+	</footer>
+	
+	<!-- start: JavaScript-->
+	<!--[if !IE]>-->
+
+			<script src="assets/js/jquery-2.0.3.min.js"></script>
+
+	<!--<![endif]-->
+
+	<!--[if IE]>
+	
+		<script src="assets/js/jquery-1.10.2.min.js"></script>
+	
+	<![endif]-->
+
+	<!--[if !IE]>-->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='assets/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+			</script>
+
+	<!--<![endif]-->
+
+	<!--[if IE]>
+	
+		<script type="text/javascript">
+	 	window.jQuery || document.write("<script src='assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		
+	<![endif]-->
+	<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	
+		
+	
+	
+	<!-- page scripts -->
+	<script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="assets/js/jquery.knob.modified.min.js"></script>
+	<!--[if lte IE 8]><script language="javascript" type="text/javascript" src="assets/js/excanvas.min.js"></script><![endif]-->
+        <script src="assets/js/jquery.sparkline.min.js"></script>
+        <script src="assets/js/jquery.dataTables.min.js"></script>
+        <script src="assets/js/dataTables.bootstrap.min.js"></script>
+        <script src="assets/js/uncompressed/jquery.blockUI.js"></script>
+	
+	<!-- theme scripts -->
+	<script src="assets/js/custom.min.js"></script>
+	<script src="assets/js/core.min.js"></script>
+
+        <!-- inline scripts related to this page -->
+        <script src="assets/js/pages/table.js"></script>
+
+	<!-- end: JavaScript-->
+
+        <!-- CrazyEgg -->
+        <script type="text/javascript">
+            setTimeout(function(){var a=document.createElement("script");
+                var b=document.getElementsByTagName("script")[0];
+                a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0021/5164.js?"+Math.floor(new Date().getTime()/3600000);
+                a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                $('#chart1').block({ message: 'Coming Soon' });
+                $('#attack_gauge').block({ message: 'Coming Soon' });
+            });
+        </script>
+		
+		 <!-- page scripts -->
+    <script src="assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="assets/js/jquery.sparkline.min.js"></script>
+    <script src="assets/js/jquery.knob.modified.min.js"></script>
+    <script src="assets/js/jquery.easy-pie-chart.min.js"></script>
+    <script src="assets/js/raphael.min.js"></script>
+    <script src="assets/js/justgage.1.0.1.min.js"></script>
+
+    <!-- theme scripts -->
+    <script src="assets/js/custom.min.js"></script>
+    <script src="assets/js/core.min.js"></script>
+
+    <!-- inline scripts related to this page -->
+    <script src="assets/js/pages/charts-other.js"></script>
+
+    <!-- end: JavaScript-->
+	
+</body>
+</html>

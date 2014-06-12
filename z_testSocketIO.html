@@ -1,0 +1,15 @@
+<script src="http://localhost:8080/socket.io/socket.io.js"></script>
+<script>
+    // Connect to the socket.io interface
+    var socket = io.connect('http://localhost:8080');
+
+    socket.emit('subscribe-event-stream', {user_id:'b9e45b2320a544b8b017fbf60fb04247', authToken:'5502ebcd7ba71584964731f1a34197c5'});
+
+    socket.on('subscribe-event-stream', function (data) {
+        //console.log(data);
+        var event = JSON.parse(data);
+
+        console.log('user_id: '+event.user_id);
+    });
+
+</script>
